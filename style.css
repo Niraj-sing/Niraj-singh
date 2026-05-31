@@ -157,6 +157,11 @@ footer p {
     gap: 10px;
 }
 
+.hero-right-section-btn{
+    text-decoration: none;
+    
+}
+
 
                               /*  Style For Mobile */
 
@@ -248,6 +253,10 @@ nav ul {
 
 
 }
+
+
+
+
 footer{
     
     display: flex;

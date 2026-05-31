@@ -1,0 +1,240 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section (Desktop) */
+        .about-hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+
+        }
+
+        .profile-story p span{
+            color: #129B9B;
+
+        }
+
+
+        /* Main Content Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Desktop: 2 Column Layout */
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .profile-story h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-story p {
+            margin-bottom: 15px;
+            color: #555;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        /* Skills & Focus Sidebar */
+        .sidebar-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .sidebar-box h3 {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background: #eef2f7;
+            color: #1e3c72;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .tag.tech {
+            background: #e6fffa;
+            color: #008080;
+        }
+
+        /* Quick Info List */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .info-list strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Mission Statement Box */
+        .mission-statement {
+            background: #eef2f7;
+            border-left: 5px solid #2a5298;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 30px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        /* Footer/CTA Button */
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
+        }
+
+        .btn:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(30, 60, 114, 0.4);
+        }
+
+        /* ==========================================================================
+           MEDIA QUERIES (RESPONSIVE TAGS)
+           ========================================================================== */
+
+        /* 1. TABLET MEDIA QUERY (Screens below 768px) */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .about-hero {
+                padding: 45px 15px;
+                margin-bottom: 30px;
+            }
+
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .about-hero p {
+                font-size: 1.05rem;
+            }
+
+            /* Convert grid into a single column layout */
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .profile-story h2 {
+                font-size: 1.5rem;
+            }
+
+            .sidebar-box {
+                padding: 20px;
+            }
+        }
+
+        /* 2. PHONE MEDIA QUERY (Screens below 480px) */
+        @media screen and (max-width: 480px) {
+            .about-hero {
+                padding: 35px 10px;
+                border-radius: 8px;
+            }
+
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-hero p {
+                font-size: 0.95rem;
+            }
+
+            .profile-story h2 {
+                font-size: 1.35rem;
+            }
+
+            .profile-story p {
+                font-size: 0.9rem;
+                text-align: left; /* Justify drops readability on very small screens */
+            }
+
+            .mission-statement {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+
+            /* Make button easily clickable on small thumbs */
+            .btn {
+                display: block;
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+        }
