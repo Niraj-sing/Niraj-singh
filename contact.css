@@ -1,0 +1,357 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Poppins", sans-serif;
+            
+    
+        }
+        
+        
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Style */
+        header {
+            background: #fff;
+            padding: 0rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-weight: 700;
+            /* display: flex;
+            justify-content: start;
+            align-content: center;
+            align-items: center; */
+            font-size: 1.4rem;
+            color: #2c3e50;
+        }
+        
+        .logo{
+            display: flex;
+            text-decoration: none;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .logo img {
+            height: 75px;
+           
+        }
+
+        .logo :hover{
+            font-size: 2rem;
+            transition: 2sec;
+        } 
+        a:visited, a:link, a:active{
+            color: inherit;}
+       
+    
+
+        
+        /* Main Contact Card Container */
+        .contact-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .contact-card {
+            background: #fff;
+            max-width: 550px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Top Accent Banner */
+        .card-banner {
+            background: #2c3e50;
+            padding: 3rem 2rem;
+            color: #fff;
+        }
+
+        .card-banner h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-banner p {
+            color: #bdc3c7;
+            font-size: 1rem;
+        }
+
+        /* Contact Details Section */
+        .card-body {
+            padding: 2.5rem 2rem;
+        }
+
+        .info-list {
+            margin-bottom: 2.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .info-item:hover {
+            transform: translateY(-2px);
+            background: #edf2f7;
+        }
+
+        .info-item i {
+            font-size: 1.4rem;
+            color: #3498db;
+            width: 40px;
+            height: 40px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; /* Icon small screen par dabega nahi */
+        }
+
+        .info-text {
+            text-align: left;
+            word-break: break-word; /* Lambi email phone me break ho jayegi screen se bahar nahi jayegi */
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+
+        .info-link {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .info-link:hover {
+            color: #3498db;
+        }
+
+        /* Social Media Section */
+        .social-section p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Icons agar jyada honge toh automatic niche line me aa jayenge */
+        }
+
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #3498db;
+            transform: translateY(-4px);
+        }
+
+        /* ========================================================
+           MEDIA QUERIES (FOR TABLETS & PHONES)
+           ======================================================== */
+
+        /* 1. Tablet Screens (Width 768px and below) */
+        @media (max-width: 768px) {
+            
+        
+            
+             header {
+                padding: 1rem 1.5rem;
+            } 
+            a:visited, a:link, a:active{
+            color: inherit;}
+            .contact-container {
+                padding: 1.5rem;
+            }
+            .card-banner {
+                padding: 2.5rem 1.5rem;
+            }
+            .card-banner h1 {
+                font-size: 2rem;
+            }
+            .card-body {
+                padding: 2rem 1.5rem;
+            }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Icons agar jyada honge toh automatic niche line me aa jayenge */
+        }
+
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        }
+
+        /* 2. Mobile Phones (Width 480px and below) */
+        @media (max-width: 480px) {
+            header {
+            background: #fff;
+            padding: 0.3rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-weight: 700;
+            /* display: flex;
+            justify-content: start;
+            align-content: center;
+            align-items: center; */
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+        
+        .logo{
+            display: flex;
+            text-decoration: none;
+            gap: 1rem;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+        }
+        a:visited, a:link, a:active{
+            color: inherit;}
+    
+            .contact-container {
+                padding: 1rem;
+            }
+            .card-banner {
+                padding: 2rem 1rem;
+            }
+            .card-banner h1 {
+                font-size: 1.7rem;
+            }
+            .card-banner p {
+                font-size: 0.9rem;
+            }
+            .card-body {
+                padding: 1.5rem 1rem;
+            }
+            .info-item {
+                gap: 12px;
+                padding: 0.8rem;
+            }
+            .info-item i {
+                width: 35px;
+                height: 35px;
+                font-size: 1.1rem;
+            }
+            .info-link {
+                font-size: 0.95rem; /* Email/Phone choti screen par acche se fit hoga */
+            }
+          
+         .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Icons agar jyada honge toh automatic niche line me aa jayenge */
+        }
+
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        }
+
+        /* 3. Extra Small Phones (Width 360px and below) */
+        @media (max-width: 360px) {
+            .card-banner h1 {
+                font-size: 1.5rem;
+            }
+            .info-link {
+                font-size: 0.85rem;
+            }
+            a:visited, a:link, a:active{
+            color: inherit;}
+            .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Icons agar jyada honge toh automatic niche line me aa jayenge */
+        }
+
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+
+
+
+
+
+
+
+        }
+  
